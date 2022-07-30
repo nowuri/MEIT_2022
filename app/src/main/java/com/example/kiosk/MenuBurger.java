@@ -71,6 +71,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
         ImageButton bt6 = (ImageButton) view.findViewById(R.id.goldenpotato);
         ImageButton bt7 = (ImageButton) view.findViewById(R.id.macspicyshanghai);
         ImageButton bt8 = (ImageButton) view.findViewById(R.id.quaterpounder);
+        ImageButton bt9 = (ImageButton) view.findViewById(R.id.supremeshrimp);
 
         bt1.setOnClickListener(new View.OnClickListener(){
 
@@ -133,6 +134,14 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "쿼터파운더 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt9.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "슈슈 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
             }
         });
         return view;

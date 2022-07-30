@@ -26,14 +26,14 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:src="@drawable/bigmac"
+                android:src="@drawable/burger_bigmac"
                 android:scaleType="centerCrop"/>
 
             <ImageButton
                 android:id="@+id/bulgogi"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:src="@drawable/bulgogi"
+                android:src="@drawable/burger_bulgogi"
                 android:layout_marginTop="10dp"
                 android:scaleType="centerCrop"/>
 
@@ -41,7 +41,7 @@
                 android:id="@+id/burger"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:src="@drawable/burger"
+                android:src="@drawable/burger_burger"
                 android:layout_marginTop="10dp"
                 android:scaleType="centerCrop"/>
         </LinearLayout>
@@ -56,14 +56,14 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/crispyoriental"
+                android:src="@drawable/burger_crispyoriental"
                 android:scaleType="centerCrop"/>
 
             <ImageButton
                 android:id="@+id/doublebulgogi"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:src="@drawable/doublebulgogi"
+                android:src="@drawable/burger_doublebulgogi"
                 android:layout_marginTop="10dp"
                 android:scaleType="centerCrop"/>
 
@@ -71,7 +71,7 @@
                 android:id="@+id/goldenpotato"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:src="@drawable/goldenpotato"
+                android:src="@drawable/burger_goldenpotato"
                 android:layout_marginTop="10dp"
                 android:scaleType="centerCrop"/>
         </LinearLayout>
@@ -86,14 +86,22 @@
                 android:layout_marginTop="10dp"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:src="@drawable/macspicyshanghai"
+                android:src="@drawable/burger_macspicyshanghai"
                 android:scaleType="centerCrop"/>
 
             <ImageButton
                 android:id="@+id/quaterpounder"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:src="@drawable/quaterpounder"
+                android:src="@drawable/burger_quaterpounder"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:id="@+id/supremeshrimp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/burger_supremeshrimp"
                 android:layout_marginTop="10dp"
                 android:scaleType="centerCrop"/>
         </LinearLayout>
