@@ -1,5 +1,6 @@
 package com.example.kiosk;
 
+import android.media.Image;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,13 +8,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link MenuBurger#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MenuBurger extends Fragment {
+public class MenuBurger extends Fragment implements View.OnClickListener{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +62,84 @@ public class MenuBurger extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu_burger, container, false);
+        View view = inflater.inflate(R.layout.fragment_menu_burger,container,false);
+        ImageButton bt1 = (ImageButton) view.findViewById(R.id.bigmac);
+        ImageButton bt2 = (ImageButton) view.findViewById(R.id.bulgogi);
+        ImageButton bt3 = (ImageButton) view.findViewById(R.id.burger);
+        ImageButton bt4 = (ImageButton) view.findViewById(R.id.crispyoriental);
+        ImageButton bt5 = (ImageButton) view.findViewById(R.id.doublebulgogi);
+        ImageButton bt6 = (ImageButton) view.findViewById(R.id.goldenpotato);
+        ImageButton bt7 = (ImageButton) view.findViewById(R.id.macspicyshanghai);
+        ImageButton bt8 = (ImageButton) view.findViewById(R.id.quaterpounder);
+
+        bt1.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                        Toast.makeText(getContext(), "빅맥's을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+                }
+        });
+
+        bt2.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "불고기 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt3.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "1955 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt4.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "크리스피 오리엔탈 치킨버거를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt5.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "더블 불고기 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt6.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "골든 포테이토 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt7.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "맥스파이시's 상하이 버거를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt8.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "쿼터파운더 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+        return view;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
