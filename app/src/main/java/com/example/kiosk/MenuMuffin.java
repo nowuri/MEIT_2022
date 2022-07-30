@@ -7,13 +7,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link MenuMuffin#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MenuMuffin extends Fragment {
+public class MenuMuffin extends Fragment implements View.OnClickListener{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +61,39 @@ public class MenuMuffin extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu_muffin, container, false);
+        View view = inflater.inflate(R.layout.fragment_menu_muffin,container,false);
+        ImageButton bt1 = (ImageButton) view.findViewById(R.id.egg);
+        ImageButton bt2 = (ImageButton) view.findViewById(R.id.baconegg);
+        ImageButton bt3 = (ImageButton) view.findViewById(R.id.chickencheese);
+
+        bt1.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "에그 맥머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt2.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "베이컨에그 맥머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt3.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "치킨치크 머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+        return view;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

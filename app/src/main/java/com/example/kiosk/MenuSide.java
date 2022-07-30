@@ -7,13 +7,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link MenuSide#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MenuSide extends Fragment {
+public class MenuSide extends Fragment implements View.OnClickListener{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +61,84 @@ public class MenuSide extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu_side, container, false);
+        View view = inflater.inflate(R.layout.fragment_menu_side,container,false);
+        ImageButton bt1 = (ImageButton) view.findViewById(R.id.frenchfries);
+        ImageButton bt2 = (ImageButton) view.findViewById(R.id.cheesestick);
+        ImageButton bt3 = (ImageButton) view.findViewById(R.id.hashbrown);
+        ImageButton bt4 = (ImageButton) view.findViewById(R.id.mcnuggets);
+        ImageButton bt5 = (ImageButton) view.findViewById(R.id.mcwings);
+        ImageButton bt6 = (ImageButton) view.findViewById(R.id.shanghaichickensnack);
+        ImageButton bt7 = (ImageButton) view.findViewById(R.id.chickentomatosnack);
+        ImageButton bt8 = (ImageButton) view.findViewById(R.id.coleslaw);
+
+        bt1.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "후렌치 후라이를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt2.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "골든 모짜렐라 치즈스틱을 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt3.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "해시 브라운을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt4.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "맥너겟을 장바구니 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt5.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "멕윙을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt6.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "상하이 치킨 스낵랩을 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt7.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "치킨 토마토 스낵랩을 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        bt8.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "코올슬로를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+            }
+        });
+        return view;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
