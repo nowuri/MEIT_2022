@@ -31,18 +31,33 @@ public class CartActivity2 extends AppCompatActivity {
             }
         });
 
-        CreateTextView();
+        ///////// 주문 리스트 출력 /////////
+        int i=0;
 
-    }
-
-    private void CreateTextView(){
-        for(int i=0; i<quantity; i++){
+        for (String s : ((MainActivity) MainActivity.main_mContext).MenuList) {
             TextView newText = new TextView(getApplicationContext());
-            //newText.setText(arr[i]);
+            newText.setText(s);
             newText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-            newText.setId(i);
+            newText.setId(i++);
             newText.setTextSize(20);
             linearLayout.addView(newText);
         }
+        int m_iTotalPrice = 0;          // 총 결제금액
+
+        ////총 결제 금액 계산////
+        for (Integer k : ((MainActivity) MainActivity.main_mContext).PriceList) {
+            m_iTotalPrice += k;
+        }
+
+        ////총 결제 금액 출력////
+        TextView newText = new TextView(getApplicationContext());
+        String tmp = String.valueOf(m_iTotalPrice);
+        newText.setText("Total Price : " + tmp);
+        newText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+        newText.setTextSize(30);
+        linearLayout.addView(newText);
+
     }
+
+
 }

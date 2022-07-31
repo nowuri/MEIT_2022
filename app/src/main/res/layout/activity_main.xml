@@ -25,15 +25,18 @@
         android:layout_height="wrap_content"/>
 
     <androidx.viewpager.widget.ViewPager
-        android:layout_below="@id/tabs"
         android:id="@+id/vp_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabs">
+
+
+    </androidx.viewpager.widget.ViewPager>
 
     <RelativeLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"/>
+        android:orientation="vertical" />
 
 </RelativeLayout>
