@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
         Fragment[] arrFragment = new Fragment[4];
         arrFragment[0] = new MenuBurger(main_mContext);
-        arrFragment[1] = new MenuDessert();
-        arrFragment[2] = new MenuMuffin();
-        arrFragment[3] = new MenuSide();
+        arrFragment[1] = new MenuDessert(main_mContext);
+        arrFragment[2] = new MenuMuffin(main_mContext);
+        arrFragment[3] = new MenuSide(main_mContext);
 
         MyPagerAdapter adapter = new MyPagerAdapter(getSupportFragmentManager(),arrFragment);
         viewPager.setAdapter(adapter);

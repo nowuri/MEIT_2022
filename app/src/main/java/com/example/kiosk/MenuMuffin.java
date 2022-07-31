@@ -1,5 +1,6 @@
 package com.example.kiosk;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -26,8 +28,10 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
     private String mParam1;
     private String mParam2;
 
-    public MenuMuffin() {
-        // Required empty public constructor
+    private static Context mContext;
+
+    public MenuMuffin(Context context){
+        mContext = context;
     }
 
     /**
@@ -40,7 +44,7 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
      */
     // TODO: Rename and change types and number of parameters
     public static MenuMuffin newInstance(String param1, String param2) {
-        MenuMuffin fragment = new MenuMuffin();
+        MenuMuffin fragment = new MenuMuffin(mContext);
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,12 +70,23 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
         ImageButton bt2 = (ImageButton) view.findViewById(R.id.baconegg);
         ImageButton bt3 = (ImageButton) view.findViewById(R.id.chickencheese);
 
+        //장바구니 버튼 누르면 CartActivity2로 이동
+        Button mBtn = (Button) view.findViewById(R.id.cartButton);
+
+        mBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity)MainActivity.main_mContext).NextPage();
+            }
+        });
+
         bt1.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "에그 맥머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-            }
+                ((MainActivity)MainActivity.main_mContext).MenuList.add("에그맥머핀");
+                ((MainActivity)MainActivity.main_mContext).PriceList.add(3900);}
         });
 
         bt2.setOnClickListener(new View.OnClickListener(){
@@ -79,7 +94,8 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "베이컨에그 맥머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-            }
+                ((MainActivity)MainActivity.main_mContext).MenuList.add("베이컨에그 맥머핀");
+                ((MainActivity)MainActivity.main_mContext).PriceList.add(3900);}
         });
 
         bt3.setOnClickListener(new View.OnClickListener(){
@@ -87,7 +103,8 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "치킨치크 머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-            }
+                ((MainActivity)MainActivity.main_mContext).MenuList.add("치킨치크 머핀");
+                ((MainActivity)MainActivity.main_mContext).PriceList.add(3900);}
         });
         return view;
     }

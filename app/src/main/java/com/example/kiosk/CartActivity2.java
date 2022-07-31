@@ -11,17 +11,14 @@ import android.widget.TextView;
 
 public class CartActivity2 extends AppCompatActivity {
     Button btn;
-    TextView textView;
     LinearLayout linearLayout;
-    int quantity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart2);
 
-        textView = (TextView) findViewById(R.id.textView2);
-        btn = (Button) findViewById(R.id.button);
+        btn = (Button) findViewById(R.id.chargeButton);
         linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -35,9 +32,12 @@ public class CartActivity2 extends AppCompatActivity {
         int i=0;
 
         for (String s : ((MainActivity) MainActivity.main_mContext).MenuList) {
+            int tmp = ((MainActivity) MainActivity.main_mContext).PriceList.get(i);
+            String s_tmp = s + " - " + tmp;
             TextView newText = new TextView(getApplicationContext());
-            newText.setText(s);
+            newText.setWidth(1000);
             newText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+            newText.setText(s_tmp);
             newText.setId(i++);
             newText.setTextSize(20);
             linearLayout.addView(newText);
@@ -53,11 +53,9 @@ public class CartActivity2 extends AppCompatActivity {
         TextView newText = new TextView(getApplicationContext());
         String tmp = String.valueOf(m_iTotalPrice);
         newText.setText("Total Price : " + tmp);
+        newText.setWidth(1000);
         newText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         newText.setTextSize(30);
         linearLayout.addView(newText);
-
     }
-
-
 }

@@ -28,15 +28,16 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
 
     private static Context mContext;
 
+    public MenuBurger(Context context){
+        mContext = context;
+    }
+
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
 
 
-    public MenuBurger(Context context){
-        mContext = context;
-    }
 
     /**
      * Use this factory method to create a new instance of
