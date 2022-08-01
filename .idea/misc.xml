@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudio/Kiosk/app/src/main/res/layout/activity_cart2.xml" value="0.1" />
+        <entry key="..\:/AndroidStudio/Kiosk/app/src/main/res/layout/activity_general_menu.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Kiosk/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Kiosk/app/src/main/res/layout/fragment_menu_burger.xml" value="0.1" />
         <entry key="..\:/AndroidStudio/Kiosk/app/src/main/res/layout/fragment_menu_dessert.xml" value="0.1287037037037037" />

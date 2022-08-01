@@ -7,33 +7,6 @@
     tools:context=".MainActivity"
     android:id="@id/container">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="단품 메뉴"
-        android:textSize="35dp"
-        android:textAlignment="center"
-        android:textColor="#F8531F"
-        android:background="#F3C12D"
-        tools:ignore="MissingConstraints" />
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabs"
-        android:layout_below="@id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <androidx.viewpager.widget.ViewPager
-        android:layout_below="@id/tabs"
-        android:id="@+id/vp_pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-    <RelativeLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"/>
 
 </RelativeLayout>
