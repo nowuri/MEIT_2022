@@ -70,12 +70,12 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
         ImageButton bt2 = (ImageButton) view.findViewById(R.id.baconegg);
         ImageButton bt3 = (ImageButton) view.findViewById(R.id.chickencheese);
 
-        //장바구니 버튼 누르면 CartActivity2로 이동
+//        //장바구니 버튼 누르면 CartActivity2로 이동
         Button mBtn = (Button) view.findViewById(R.id.cartButton);
 
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 ((MainActivity)MainActivity.main_mContext).NextPage();
             }
         });

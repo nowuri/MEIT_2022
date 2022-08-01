@@ -86,9 +86,8 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
 
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 ((MainActivity)MainActivity.main_mContext).NextPage();
-
             }
         });
 
