@@ -87,7 +87,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity)MainActivity.main_mContext).NextPage();
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).NextPage();
             }
         });
 
@@ -95,8 +95,8 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "빅맥's을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("빅맥");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(5600);
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("빅맥");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
 
             }
         });
@@ -106,8 +106,8 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "불고기 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("불고기버거");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(5000);
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("불고기버거");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5000);
             }
         });
 
@@ -116,8 +116,8 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "1955 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("1955버거");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(5900);
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("1955버거");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5900);
             }
         });
 
@@ -126,8 +126,8 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "크리스피 오리엔탈 치킨버거를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("크리스피 오리엔탈 치킨버거");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(5600);
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("크리스피 오리엔탈 치킨버거");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
 
             }
         });
@@ -137,8 +137,8 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "더블 불고기 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("더블 불고기 버거");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(5600);
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("더블 불고기 버거");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
 
             }
         });
@@ -148,8 +148,8 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "골든 포테이토 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("골든 포테이토 버거");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(5600);
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("골든 포테이토 버거");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
 
             }
         });
@@ -159,8 +159,8 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "맥스파이시's 상하이 버거를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("맥스파이시");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(5600);
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("맥스파이시");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
             }
         });
 
@@ -169,8 +169,8 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "쿼터파운더 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("쿼터파운더 버거");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(5600);
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("쿼터파운더 버거");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
             }
         });
 
@@ -179,8 +179,8 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "슈슈 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("슈슈버거");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(5600);
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("슈슈버거");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
 
             }
         });

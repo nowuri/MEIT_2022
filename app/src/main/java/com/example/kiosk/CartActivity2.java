@@ -31,8 +31,8 @@ public class CartActivity2 extends AppCompatActivity {
         ///////// 주문 리스트 출력 /////////
         int i=0;
 
-        for (String s : ((MainActivity) MainActivity.main_mContext).MenuList) {
-            int tmp = ((MainActivity) MainActivity.main_mContext).PriceList.get(i);
+        for (String s : ((GeneralMenuActivity) GeneralMenuActivity.main_mContext).MenuList) {
+            int tmp = ((GeneralMenuActivity) GeneralMenuActivity.main_mContext).PriceList.get(i);
             String s_tmp = s + " - " + tmp;
             TextView newText = new TextView(getApplicationContext());
             newText.setWidth(1000);
@@ -45,7 +45,7 @@ public class CartActivity2 extends AppCompatActivity {
         int m_iTotalPrice = 0;          // 총 결제금액
 
         ////총 결제 금액 계산////
-        for (Integer k : ((MainActivity) MainActivity.main_mContext).PriceList) {
+        for (Integer k : ((GeneralMenuActivity) GeneralMenuActivity.main_mContext).PriceList) {
             m_iTotalPrice += k;
         }
 

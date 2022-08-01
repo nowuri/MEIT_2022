@@ -81,7 +81,7 @@ public class MenuDessert extends Fragment implements View.OnClickListener{
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity)MainActivity.main_mContext).NextPage();
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).NextPage();
             }
         });
 
@@ -90,8 +90,8 @@ public class MenuDessert extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "아이스크림콘을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("아이스크림콘");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(1500);
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("아이스크림콘");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(1500);
             }
         });
 
@@ -100,8 +100,8 @@ public class MenuDessert extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "초코콘을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("초코콘");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(2000);}
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("초코콘");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(2000);}
         });
 
         bt3.setOnClickListener(new View.OnClickListener(){
@@ -109,8 +109,8 @@ public class MenuDessert extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "스트로베리콘을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("스트로베리콘");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(2000);}
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("스트로베리콘");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(2000);}
         });
 
         bt4.setOnClickListener(new View.OnClickListener(){
@@ -118,8 +118,8 @@ public class MenuDessert extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "오레오 맥플러리를 장바구니 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("오레오 맥플러리");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(2800);}
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("오레오 맥플러리");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(2800);}
         });
 
         bt5.setOnClickListener(new View.OnClickListener(){
@@ -127,8 +127,8 @@ public class MenuDessert extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "초코오레오 맥플러리를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("초코오레오 맥플러리");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(2800);}
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("초코오레오 맥플러리");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(2800);}
         });
 
         bt6.setOnClickListener(new View.OnClickListener(){
@@ -136,8 +136,8 @@ public class MenuDessert extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "딸기오레오 맥플러리를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("딸기오레오 맥플러리");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(2800);}
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("딸기오레오 맥플러리");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(2800);}
         });
 
         bt7.setOnClickListener(new View.OnClickListener(){
@@ -145,8 +145,8 @@ public class MenuDessert extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "베리스트로베리 맥플러리를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("베리스트로베리 맥플러리");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(3800);}
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("베리스트로베리 맥플러리");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(3800);}
         });
 
         bt8.setOnClickListener(new View.OnClickListener(){
@@ -154,8 +154,8 @@ public class MenuDessert extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "허쉬 프레첼 맥플러리을 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
-                ((MainActivity)MainActivity.main_mContext).MenuList.add("허쉬프레첼 맥플러리");
-                ((MainActivity)MainActivity.main_mContext).PriceList.add(3800);}
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("허쉬프레첼 맥플러리");
+                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(3800);}
         });
         return view;
     }
