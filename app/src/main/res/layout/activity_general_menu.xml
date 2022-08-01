@@ -11,7 +11,7 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="단품 메뉴"
+        android:text="일반 메뉴"
         android:textSize="35dp"
         android:textAlignment="center"
         android:textColor="#F8531F"
