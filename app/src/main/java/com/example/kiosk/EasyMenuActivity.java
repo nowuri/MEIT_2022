@@ -43,7 +43,7 @@ public class EasyMenuActivity extends AppCompatActivity {
     }
 
     public void NextPage(){
-        Intent intent = new Intent(getApplicationContext(), CartActivity2.class);
+        Intent intent = new Intent(getApplicationContext(), CartActivity3.class);
         startActivity(intent);
     }
 
