@@ -14,24 +14,24 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/generalmenu"
         android:layout_below="@id/mcdonald"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:text="일반 주문"
-        android:textSize="20dp"
+        android:textSize="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:background="#DC2121"/>
+        android:background="#F14b4b"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_below="@id/generalmenu"
         android:id="@+id/easymenu"
         android:layout_width="300dp"
         android:layout_height="70dp"
         android:text="간편 주문"
-        android:textSize="20dp"
+        android:textSize="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:background="#0476D1"/>

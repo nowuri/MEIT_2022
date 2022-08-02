@@ -101,18 +101,6 @@
                   android:layout_marginLeft="3dp"
                   android:scaleType="centerCrop"/>
           </LinearLayout>
-          <LinearLayout
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
-              <Button
-                  android:id="@+id/cartButton"
-                  android:layout_marginLeft="10dp"
-                  android:layout_width="match_parent"
-                  android:layout_height="50dp"
-                  android:text="장바구니"
-                  android:textSize="20dp"
-                  android:background="#F3C12D"/>
-          </LinearLayout>
       </LinearLayout>
 
   </LinearLayout>

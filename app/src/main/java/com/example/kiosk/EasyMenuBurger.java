@@ -7,13 +7,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link EasyMenuBurger#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class EasyMenuBurger extends Fragment {
+public class EasyMenuBurger extends Fragment implements View.OnClickListener{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +61,117 @@ public class EasyMenuBurger extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_easy_menu_burger, container, false);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_menu_burger,container,false);
+        ImageButton bt1= (ImageButton) view.findViewById(R.id.bigmac);
+        ImageButton bt2 = (ImageButton) view.findViewById(R.id.bulgogi);
+        ImageButton bt3 = (ImageButton) view.findViewById(R.id.burger);
+        ImageButton bt4 = (ImageButton) view.findViewById(R.id.crispyoriental);
+        ImageButton bt5 = (ImageButton) view.findViewById(R.id.doublebulgogi);
+        ImageButton bt6 = (ImageButton) view.findViewById(R.id.goldenpotato);
+        ImageButton bt7 = (ImageButton) view.findViewById(R.id.macspicyshanghai);
+        ImageButton bt8 = (ImageButton) view.findViewById(R.id.quaterpounder);
+        ImageButton bt9 = (ImageButton) view.findViewById(R.id.supremeshrimp);
+
+
+        bt1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "빅맥's을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("빅맥");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(5600);
+
+            }
+        });
+
+        bt2.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "불고기 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("불고기버거");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(5000);
+            }
+        });
+
+        bt3.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "1955 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("1955버거");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(5900);
+            }
+        });
+
+        bt4.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "크리스피 오리엔탈 치킨버거를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("크리스피 오리엔탈 치킨버거");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(5600);
+
+            }
+        });
+
+        bt5.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "더블 불고기 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("더블 불고기 버거");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(5600);
+
+            }
+        });
+
+        bt6.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "골든 포테이토 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("골든 포테이토 버거");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(5600);
+
+            }
+        });
+
+        bt7.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "맥스파이시's 상하이 버거를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("맥스파이시");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(5600);
+            }
+        });
+
+        bt8.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "쿼터파운더 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("쿼터파운더 버거");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(5600);
+            }
+        });
+
+        bt9.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "슈슈 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("슈슈버거");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(5600);
+
+            }
+        });
+        return view;
     }
-}
+
+    @Override
+    public void onClick(View v) {
+
+    }
+    }

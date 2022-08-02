@@ -67,15 +67,6 @@ public class EasyMenuMuffin extends Fragment implements View.OnClickListener{
         ImageButton bt2 = (ImageButton) view.findViewById(R.id.baconegg);
         ImageButton bt3 = (ImageButton) view.findViewById(R.id.chickencheese);
 
-//        //장바구니 버튼 누르면 CartActivity2로 이동
-        Button mBtn = (Button) view.findViewById(R.id.cartButton);
-
-        mBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).NextPage();
-            }
-        });
 
         bt1.setOnClickListener(new View.OnClickListener(){
 

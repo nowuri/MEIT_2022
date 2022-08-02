@@ -81,15 +81,6 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
         ImageButton bt8 = (ImageButton) view.findViewById(R.id.quaterpounder);
         ImageButton bt9 = (ImageButton) view.findViewById(R.id.supremeshrimp);
 
-        //장바구니 버튼 누르면 CartActivity2로 이동
-        Button mBtn = (Button) view.findViewById(R.id.cartButton);
-
-        mBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).NextPage();
-            }
-        });
 
         bt1.setOnClickListener(new View.OnClickListener(){
             @Override

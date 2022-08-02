@@ -54,16 +54,6 @@
                     android:layout_marginLeft="20dp"
                     android:scaleType="centerCrop"/>
             </LinearLayout>
-
-            <Button
-                android:id="@+id/cartButton"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="장바구니"
-                android:textSize="20dp"
-                android:background="#FFC107"/>
         </LinearLayout>
     </LinearLayout>
 

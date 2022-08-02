@@ -9,6 +9,8 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -40,6 +42,16 @@ public class EasyMenuActivity extends AppCompatActivity {
         EasyMenuActivity.MyPagerAdapter adapter = new EasyMenuActivity.MyPagerAdapter(getSupportFragmentManager(),arrFragment);
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+
+        //장바구니 버튼 누르면 CartActivity2로 이동
+        Button mBtn = (Button) findViewById(R.id.cartButton);
+
+        mBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).NextPage();
+            }
+        });
     }
 
     public void NextPage(){
