@@ -3,13 +3,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EasyMenuSide"
-    android:background="#2196F3">
+    tools:context=".EasyMenuSide">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <ImageButton
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/frenchfries"
+                   android:layout_width="170dp"
+                   android:layout_height="170dp"
+                   android:src="@drawable/side_frenchfries"
+                   android:scaleType="centerCrop"/>
+
+               <ImageButton
+                   android:layout_width="170dp"
+                   android:layout_height="170dp"
+                   android:id="@+id/cheesestick"
+                   android:src="@drawable/side_cheesestick"
+                   android:scaleType="centerCrop"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="20dp"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <ImageButton
+                   android:layout_width="170dp"
+                   android:layout_height="170dp"
+                   android:src="@drawable/side_hashbrown"
+                   android:scaleType="centerCrop"
+                   android:id="@+id/hashbrown"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="20dp"/>
+
+               <ImageButton
+                   android:layout_width="170dp"
+                   android:layout_height="170dp"
+                   android:src="@drawable/side_mcnuggets"
+                   android:id="@+id/mcnuggets"
+                   android:scaleType="centerCrop"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="20dp"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="20dp">
+               <ImageButton
+                   android:layout_width="170dp"
+                   android:layout_height="170dp"
+                   android:src="@drawable/side_mcwings"
+                   android:id="@+id/mcwings"
+                   android:scaleType="centerCrop"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="20dp"/>
+               <ImageButton
+                   android:layout_width="170dp"
+                   android:layout_height="170dp"
+                   android:src="@drawable/side_shanghaichickensnack"
+                   android:id="@+id/shanghaichickensnack"
+                   android:scaleType="centerCrop"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="20dp"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="80dp">
+               <ImageButton
+                   android:layout_width="170dp"
+                   android:layout_height="170dp"
+                   android:src="@drawable/side_chickentomatosnack"
+                   android:id="@+id/chickentomatosnack"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="20dp"
+                   android:scaleType="centerCrop"/>
+                <ImageButton
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/side_coleslaw"
+                    android:id="@+id/coleslaw"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"/>
+           </LinearLayout>
+       </LinearLayout>
+   </ScrollView>
 
 </FrameLayout>
