@@ -37,6 +37,7 @@
         android:background="#0476D1"/>
 
     <TextView
+        android:id="@+id/time"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="현재 조리 시간: 6분"
