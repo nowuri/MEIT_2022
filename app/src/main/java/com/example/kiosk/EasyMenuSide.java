@@ -61,6 +61,8 @@ public class EasyMenuSide extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        long TimeLeft = ((MainActivity)MainActivity.main_tContext).TimeLeft;
+
         View view = inflater.inflate(R.layout.fragment_easy_menu_side,container,false);
         ImageButton bt1 = (ImageButton) view.findViewById(R.id.frenchfries);
         ImageButton bt2 = (ImageButton) view.findViewById(R.id.cheesestick);
@@ -78,6 +80,7 @@ public class EasyMenuSide extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "후렌치 후라이를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList.add("후렌치 후라이");
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.add(1800);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*5;
             }
         });
 
@@ -88,6 +91,7 @@ public class EasyMenuSide extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "골든 모짜렐라 치즈스틱을 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("골든 모짜렐라 치즈스틱");
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2100);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*5;
             }
         });
 
@@ -97,7 +101,9 @@ public class EasyMenuSide extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "해시 브라운을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("해시 브라운");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(1800);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(1800);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*5;}
+
         });
 
         bt4.setOnClickListener(new View.OnClickListener(){
@@ -106,7 +112,8 @@ public class EasyMenuSide extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "맥너겟을 장바구니 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("맥 너겟");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2800);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2800);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;}
         });
 
         bt5.setOnClickListener(new View.OnClickListener(){
@@ -115,7 +122,8 @@ public class EasyMenuSide extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "멕윙을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("맥윙");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3200);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3200);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;}
         });
 
         bt6.setOnClickListener(new View.OnClickListener(){
@@ -124,7 +132,8 @@ public class EasyMenuSide extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "상하이 치킨 스낵랩을 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("상하이 치킨 스낵랩");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3800);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3800);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;}
         });
 
         bt7.setOnClickListener(new View.OnClickListener(){
@@ -133,7 +142,8 @@ public class EasyMenuSide extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "치킨 토마토 스낵랩을 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("치킨 토마토 스낵랩");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3800);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3800);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;}
         });
 
         bt8.setOnClickListener(new View.OnClickListener(){
@@ -142,7 +152,8 @@ public class EasyMenuSide extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "코올슬로를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("코울슬로");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(1600);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(1600);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*5;}
         });
         return view;
     }

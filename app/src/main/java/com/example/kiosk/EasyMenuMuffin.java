@@ -1,5 +1,6 @@
 package com.example.kiosk;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -23,14 +24,19 @@ public class EasyMenuMuffin extends Fragment implements View.OnClickListener{
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+
+    //private static Context mContext;
+
+
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
-    public EasyMenuMuffin() {
-        // Required empty public constructor
-    }
+    //public EasyMenuMuffin(Context context) {mContext = context;}
 
+    public EasyMenuMuffin(){
+
+    }
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -62,6 +68,8 @@ public class EasyMenuMuffin extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        long TimeLeft = ((MainActivity)MainActivity.main_tContext).TimeLeft;
+
         View view = inflater.inflate(R.layout.fragment_easy_menu_muffin,container,false);
         ImageButton bt1 = (ImageButton) view.findViewById(R.id.egg);
         ImageButton bt2 = (ImageButton) view.findViewById(R.id.baconegg);
@@ -74,7 +82,8 @@ public class EasyMenuMuffin extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "에그 맥머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("에그맥머핀");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3900);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3900);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*5;}
         });
 
         bt2.setOnClickListener(new View.OnClickListener(){
@@ -83,7 +92,8 @@ public class EasyMenuMuffin extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "베이컨에그 맥머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("베이컨에그 맥머핀");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3900);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3900);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*6;}
         });
 
         bt3.setOnClickListener(new View.OnClickListener(){
@@ -92,7 +102,8 @@ public class EasyMenuMuffin extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "치킨치크 머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("치킨치크 머핀");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3900);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3900);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;}
         });
         return view;
     }

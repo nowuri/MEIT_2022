@@ -61,6 +61,8 @@ public class EasyMenuDessert extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        long TimeLeft = ((MainActivity)MainActivity.main_tContext).TimeLeft;
+
         View view = inflater.inflate(R.layout.fragment_easy_menu_dessert,container,false);
         ImageButton bt1 = (ImageButton) view.findViewById(R.id.icecream);
         ImageButton bt2 = (ImageButton) view.findViewById(R.id.chocolate);
@@ -78,6 +80,7 @@ public class EasyMenuDessert extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "아이스크림콘을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("아이스크림콘");
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(1500);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*1;
             }
         });
 
@@ -87,7 +90,9 @@ public class EasyMenuDessert extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "초코콘을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("초코콘");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2000);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2000);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;
+            }
         });
 
         bt3.setOnClickListener(new View.OnClickListener(){
@@ -96,7 +101,8 @@ public class EasyMenuDessert extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "스트로베리콘을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("스트로베리콘");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2000);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2000);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;}
         });
 
         bt4.setOnClickListener(new View.OnClickListener(){
@@ -105,7 +111,8 @@ public class EasyMenuDessert extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "오레오 맥플러리를 장바구니 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("오레오 맥플러리");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2800);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2800);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;}
         });
 
         bt5.setOnClickListener(new View.OnClickListener(){
@@ -114,7 +121,8 @@ public class EasyMenuDessert extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "초코오레오 맥플러리를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("초코오레오 맥플러리");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2800);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2800);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*3;}
         });
 
         bt6.setOnClickListener(new View.OnClickListener(){
@@ -123,7 +131,8 @@ public class EasyMenuDessert extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "딸기오레오 맥플러리를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("딸기오레오 맥플러리");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2800);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(2800);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*3;}
         });
 
         bt7.setOnClickListener(new View.OnClickListener(){
@@ -132,7 +141,8 @@ public class EasyMenuDessert extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "베리스트로베리 맥플러리를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("베리스트로베리 맥플러리");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3800);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3800);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*3;}
         });
 
         bt8.setOnClickListener(new View.OnClickListener(){
@@ -141,7 +151,8 @@ public class EasyMenuDessert extends Fragment implements View.OnClickListener{
             public void onClick(View v) {
                 Toast.makeText(getContext(), "허쉬 프레첼 맥플러리을 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("허쉬프레첼 맥플러리");
-                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3800);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3800);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*3;}
         });
         return view;
     }

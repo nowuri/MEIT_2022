@@ -70,6 +70,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        long TimeLeft = ((MainActivity)MainActivity.main_tContext).TimeLeft;
         View view = inflater.inflate(R.layout.fragment_menu_burger,container,false);
         ImageButton bt1= (ImageButton) view.findViewById(R.id.bigmac);
         ImageButton bt2 = (ImageButton) view.findViewById(R.id.bulgogi);
@@ -88,6 +89,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "빅맥's을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("빅맥");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;
 
             }
         });
@@ -99,6 +101,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "불고기 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("불고기버거");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5000);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*8;
             }
         });
 
@@ -109,6 +112,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "1955 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("1955버거");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5900);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;
             }
         });
 
@@ -119,6 +123,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "크리스피 오리엔탈 치킨버거를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("크리스피 오리엔탈 치킨버거");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*9;
 
             }
         });
@@ -130,6 +135,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "더블 불고기 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("더블 불고기 버거");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*8;
 
             }
         });
@@ -141,6 +147,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "골든 포테이토 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("골든 포테이토 버거");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*6;
 
             }
         });
@@ -152,6 +159,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "맥스파이시's 상하이 버거를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("맥스파이시");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;
             }
         });
 
@@ -162,6 +170,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "쿼터파운더 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("쿼터파운더 버거");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*9;
             }
         });
 
@@ -172,6 +181,7 @@ public class MenuBurger extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "슈슈 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("슈슈버거");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(5600);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*10;
 
             }
         });
