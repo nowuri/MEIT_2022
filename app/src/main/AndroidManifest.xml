@@ -14,6 +14,15 @@
         android:theme="@style/Theme.Kiosk"
         tools:targetApi="31">
         <activity
+            android:name=".ENDActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".EatWhere2"
+            android:exported="false" />
+        <activity
+            android:name=".EatWhere1"
+            android:exported="false" />
+        <activity
             android:name=".CartActivity3"
             android:exported="false" />
         <activity
@@ -34,6 +43,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ENDActivity2"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -79,7 +79,7 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "에그 맥머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("에그맥머핀");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(3900);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*5;}
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;}
         });
 
         bt2.setOnClickListener(new View.OnClickListener(){
@@ -89,7 +89,7 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "베이컨에그 맥머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("베이컨에그 맥머핀");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(3900);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*6;}
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;}
         });
 
         bt3.setOnClickListener(new View.OnClickListener(){
@@ -99,7 +99,7 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
                 Toast.makeText(getContext(), "치킨치크 머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("치킨치크 머핀");
                 ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(3900);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;}
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;}
         });
         return view;
     }

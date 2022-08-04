@@ -28,33 +28,45 @@
             android:textAlignment="center"
             android:textSize="35dp"
             android:background="#F3C12D"/>
-
-        <Button
-            android:id="@+id/CardButton"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="카드"
-            android:textAlignment="center"
-            android:textSize="30dp"/>
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp">
+            <Button
+                android:id="@+id/CardButton"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:text="카드"
+                android:textAlignment="center"
+                android:textSize="30dp"/>
 
-        <Button
-            android:id="@+id/CouponButton"
+            <Button
+                android:id="@+id/CouponButton"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:text="상품권"
+                android:textAlignment="center"
+                android:layout_marginLeft="30dp"
+                android:textSize="30dp"
+                />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="상품권"
-            android:textAlignment="center"
-            android:textSize="30dp"
-            />
-
-        <Button
-            android:id="@+id/MobileCouponButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="모바일상품권"
-            android:textAlignment="center"
-            android:textSize="30dp"
-            />
-
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/MobileCouponButton"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:text="모바일상품권"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                />
+        </LinearLayout>
 
     </LinearLayout>
 

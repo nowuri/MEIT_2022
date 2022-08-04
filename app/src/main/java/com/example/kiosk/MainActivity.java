@@ -35,7 +35,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    public static long TimeLeft;
+    public static long TimeLeft=0;
+    public static long FinalTime;
     public static Context main_tContext;
 
 
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             @Override
             public void onClick(View v) {
-                Intent gintent = new Intent(getApplicationContext(),GeneralMenuActivity.class);
+                Intent gintent = new Intent(getApplicationContext(),EatWhere2.class);
                 startActivity(gintent);
             }
         });
@@ -61,12 +62,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         easymenu.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent eintent = new Intent(getApplicationContext(),EasyMenuActivity.class);
+                Intent eintent = new Intent(getApplicationContext(),EatWhere1.class);
                 startActivity(eintent);
             }
         });
 
-        CountDown(TimeLeft);
+        CountDown(FinalTime);
     }
 
     @Override

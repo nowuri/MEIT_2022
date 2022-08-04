@@ -86,7 +86,7 @@ public class EasyMenuBurger extends Fragment implements View.OnClickListener {
                 Toast.makeText(getContext(), "빅맥's을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList.add("빅맥");
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.add(5600);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;
 
             }
         });
@@ -98,7 +98,7 @@ public class EasyMenuBurger extends Fragment implements View.OnClickListener {
                 Toast.makeText(getContext(), "불고기 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList.add("불고기버거");
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.add(5000);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*8;
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;
             }
         });
 
@@ -109,7 +109,7 @@ public class EasyMenuBurger extends Fragment implements View.OnClickListener {
                 Toast.makeText(getContext(), "1955 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList.add("1955버거");
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.add(5900);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;
             }
         });
 
@@ -120,7 +120,7 @@ public class EasyMenuBurger extends Fragment implements View.OnClickListener {
                 Toast.makeText(getContext(), "크리스피 오리엔탈 치킨버거를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList.add("크리스피 오리엔탈 치킨버거");
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.add(5600);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*9;
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;
 
             }
         });
@@ -132,7 +132,7 @@ public class EasyMenuBurger extends Fragment implements View.OnClickListener {
                 Toast.makeText(getContext(), "더블 불고기 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList.add("더블 불고기 버거");
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.add(5600);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*8;
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;
 
             }
         });
@@ -144,7 +144,7 @@ public class EasyMenuBurger extends Fragment implements View.OnClickListener {
                 Toast.makeText(getContext(), "골든 포테이토 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList.add("골든 포테이토 버거");
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.add(5600);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*6;
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;
 
             }
         });
@@ -156,7 +156,7 @@ public class EasyMenuBurger extends Fragment implements View.OnClickListener {
                 Toast.makeText(getContext(), "맥스파이시's 상하이 버거를 장바구니에 \n담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList.add("맥스파이시");
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.add(5600);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*7;
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;
             }
         });
 
@@ -167,7 +167,7 @@ public class EasyMenuBurger extends Fragment implements View.OnClickListener {
                 Toast.makeText(getContext(), "쿼터파운더 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList.add("쿼터파운더 버거");
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.add(5600);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*9;
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;
             }
         });
 
@@ -178,7 +178,7 @@ public class EasyMenuBurger extends Fragment implements View.OnClickListener {
                 Toast.makeText(getContext(), "슈슈 버거를 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList.add("슈슈버거");
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.add(5600);
-                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*10;
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;
 
             }
         });

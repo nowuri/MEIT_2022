@@ -62,6 +62,8 @@ public class PayActivity extends AppCompatActivity {
                             for (int i = 0; i < 2; i++) {
                                 Thread.sleep(3000);
                                 Toast.makeText(getApplicationContext(),"결제완료",Toast.LENGTH_LONG).show();
+                                ((MainActivity) MainActivity.main_tContext).FinalTime = ((MainActivity) MainActivity.main_tContext).FinalTime + ((MainActivity) MainActivity.main_tContext).TimeLeft;
+                                ((MainActivity) MainActivity.main_tContext).TimeLeft=0;
                                 Intent intent1 = new Intent(getApplicationContext(), ENDActivity2.class);
                                 startActivity(intent1);
                             }
@@ -75,6 +77,8 @@ public class PayActivity extends AppCompatActivity {
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(getApplicationContext(),"결제실패",Toast.LENGTH_LONG).show();
+                        Intent intent4 = new Intent(getApplicationContext(), ENDActivity3.class);
+                        startActivity(intent4);
                     }
                 });
         builder.show();
@@ -98,6 +102,8 @@ public class PayActivity extends AppCompatActivity {
                                 String num = number.getText().toString();
                                 Thread.sleep(3000);
                                 Toast.makeText(getApplicationContext(),"결제완료",Toast.LENGTH_LONG).show();
+                                ((MainActivity) MainActivity.main_tContext).FinalTime = ((MainActivity) MainActivity.main_tContext).FinalTime + ((MainActivity) MainActivity.main_tContext).TimeLeft;
+                                ((MainActivity) MainActivity.main_tContext).TimeLeft=0;
                                 Intent intent1 = new Intent(getApplicationContext(), ENDActivity2.class);
                                 startActivity(intent1);
                             }
@@ -111,6 +117,8 @@ public class PayActivity extends AppCompatActivity {
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(getApplicationContext(),"결제실패",Toast.LENGTH_LONG).show();
+                        Intent intent4 = new Intent(getApplicationContext(), ENDActivity3.class);
+                        startActivity(intent4);
                     }
                 });
         builder.show();
@@ -130,6 +138,8 @@ public class PayActivity extends AppCompatActivity {
                             for (int i = 0; i < 2; i++) {
                                 Thread.sleep(3000);
                                 Toast.makeText(getApplicationContext(),"결제완료",Toast.LENGTH_LONG).show();
+                                ((MainActivity) MainActivity.main_tContext).FinalTime = ((MainActivity) MainActivity.main_tContext).FinalTime + ((MainActivity) MainActivity.main_tContext).TimeLeft;
+                                ((MainActivity) MainActivity.main_tContext).TimeLeft=0;
                                 Intent intent1 = new Intent(getApplicationContext(), ENDActivity2.class);
                                 startActivity(intent1);
                             }
@@ -143,6 +153,8 @@ public class PayActivity extends AppCompatActivity {
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(getApplicationContext(),"결제실패",Toast.LENGTH_LONG).show();
+                        Intent intent4 = new Intent(getApplicationContext(), ENDActivity3.class);
+                        startActivity(intent4);
                     }
                 });
         builder.show();
