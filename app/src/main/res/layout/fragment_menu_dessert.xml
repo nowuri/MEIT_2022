@@ -21,29 +21,29 @@
 
               <ImageButton
                   android:id="@+id/icecream"
-                  android:layout_width="130dp"
-                  android:layout_height="130dp"
+                  android:layout_width="180dp"
+                  android:layout_height="180dp"
                   android:src="@drawable/dessert_icecream"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="15dp"
+                  android:scaleType="centerCrop"/>
+
+              <ImageButton
+                  android:id="@+id/chocolate"
+                  android:layout_width="180dp"
+                  android:layout_height="180dp"
+                  android:src="@drawable/dessert_chocolate"
                   android:layout_marginTop="10dp"
                   android:layout_marginLeft="10dp"
                   android:scaleType="centerCrop"/>
 
               <ImageButton
-                  android:id="@+id/chocolate"
-                  android:layout_width="130dp"
-                  android:layout_height="130dp"
-                  android:src="@drawable/dessert_chocolate"
-                  android:layout_marginTop="10dp"
-                  android:layout_marginLeft="3dp"
-                  android:scaleType="centerCrop"/>
-
-              <ImageButton
                   android:id="@+id/strawberry"
-                  android:layout_width="130dp"
-                  android:layout_height="130dp"
+                  android:layout_width="180dp"
+                  android:layout_height="180dp"
                   android:src="@drawable/dessert_strawberry"
                   android:layout_marginTop="10dp"
-                  android:layout_marginLeft="3dp"
+                  android:layout_marginLeft="10dp"
                   android:scaleType="centerCrop"/>
           </LinearLayout>
           <LinearLayout
@@ -53,29 +53,29 @@
 
               <ImageButton
                   android:id="@+id/oreo"
-                  android:layout_width="130dp"
-                  android:layout_height="130dp"
+                  android:layout_width="180dp"
+                  android:layout_height="180dp"
                   android:src="@drawable/dessert_oreo"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="15dp"
+                  android:scaleType="centerCrop"/>
+
+              <ImageButton
+                  android:id="@+id/chocooreo"
+                  android:layout_width="180dp"
+                  android:layout_height="180dp"
+                  android:src="@drawable/dessert_chocooreo"
                   android:layout_marginTop="10dp"
                   android:layout_marginLeft="10dp"
                   android:scaleType="centerCrop"/>
 
               <ImageButton
-                  android:id="@+id/chocooreo"
-                  android:layout_width="130dp"
-                  android:layout_height="130dp"
-                  android:src="@drawable/dessert_chocooreo"
-                  android:layout_marginTop="10dp"
-                  android:layout_marginLeft="3dp"
-                  android:scaleType="centerCrop"/>
-
-              <ImageButton
                   android:id="@+id/strawberryooreo"
-                  android:layout_width="130dp"
-                  android:layout_height="130dp"
+                  android:layout_width="180dp"
+                  android:layout_height="180dp"
                   android:src="@drawable/dessert_strawberryoreo"
                   android:layout_marginTop="10dp"
-                  android:layout_marginLeft="3dp"
+                  android:layout_marginLeft="10dp"
                   android:scaleType="centerCrop"/>
           </LinearLayout>
           <LinearLayout
@@ -85,20 +85,20 @@
 
               <ImageButton
                   android:id="@+id/verystrawberry"
-                  android:layout_width="130dp"
-                  android:layout_height="130dp"
+                  android:layout_width="180dp"
+                  android:layout_height="180dp"
                   android:src="@drawable/dessert_verystrawberry"
                   android:layout_marginTop="10dp"
-                  android:layout_marginLeft="10dp"
+                  android:layout_marginLeft="15dp"
                   android:scaleType="centerCrop"/>
 
               <ImageButton
                   android:id="@+id/hersheypretzel"
-                  android:layout_width="130dp"
-                  android:layout_height="130dp"
+                  android:layout_width="180dp"
+                  android:layout_height="180dp"
                   android:src="@drawable/dessert_hersheypretzel"
                   android:layout_marginTop="10dp"
-                  android:layout_marginLeft="3dp"
+                  android:layout_marginLeft="10dp"
                   android:scaleType="centerCrop"/>
           </LinearLayout>
       </LinearLayout>

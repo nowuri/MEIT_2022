@@ -16,39 +16,41 @@
 
             <LinearLayout
                 android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/egg"
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
                     android:src="@drawable/muffin_egg"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:scaleType="centerCrop"/>
 
                 <ImageButton
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="25dp"
                     android:id="@+id/baconegg"
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
                     android:src="@drawable/muffin_baconegg"
                     android:layout_marginTop="10dp"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp">
 
                 <ImageButton
                     android:id="@+id/chickencheese"
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
                     android:src="@drawable/muffin_chickencheese"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"

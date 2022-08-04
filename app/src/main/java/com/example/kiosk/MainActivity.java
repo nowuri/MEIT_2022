@@ -35,13 +35,16 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    public String TimeLeft = "";
+    public static long TimeLeft;
+    public static Context main_tContext;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        main_tContext = this;
 
         Button generalmenu = (Button)findViewById(R.id.generalmenu);
         Button easymenu = (Button)findViewById(R.id.easymenu);
@@ -63,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        CountDown(60000);
+        CountDown(TimeLeft);
     }
 
     @Override
@@ -71,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    public void CountDown(int c_time){
+    public void CountDown(long c_time){
 
         TextView time = (TextView) findViewById(R.id.time);
 
@@ -80,8 +83,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onTick(long millisUntilFinished){
 
                 long getMin = (long)millisUntilFinished;
-                String min = String.valueOf(getMin/(60*1000)+1);
+                int min = (int) (getMin/(60*1000)+1);
                 time.setText("현재 조리 시간: "+ min +"분");
+                min--;
             }
 
             @Override

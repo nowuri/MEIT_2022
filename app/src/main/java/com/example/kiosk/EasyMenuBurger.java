@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import java.sql.Time;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link EasyMenuBurger#newInstance} factory method to
@@ -61,6 +63,8 @@ public class EasyMenuBurger extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        long TimeLeft = ((MainActivity)MainActivity.main_tContext).TimeLeft;
+
         View view = inflater.inflate(R.layout.fragment_easy_menu_burger, container, false);
         ImageButton bt1 = (ImageButton) view.findViewById(R.id.bigmac);
         ImageButton bt2 = (ImageButton) view.findViewById(R.id.bulgogi);
@@ -79,6 +83,7 @@ public class EasyMenuBurger extends Fragment implements View.OnClickListener {
                 Toast.makeText(getContext(), "빅맥's을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList.add("빅맥");
                 ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.add(5600);
+                ((MainActivity) MainActivity.main_tContext).TimeLeft  = ((MainActivity) MainActivity.main_tContext).TimeLeft + 60000*2;
 
             }
         });

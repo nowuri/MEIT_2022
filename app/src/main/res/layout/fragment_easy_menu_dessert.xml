@@ -16,82 +16,86 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="30dp">
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp">
                 <ImageButton
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
                     android:src="@drawable/dessert_icecream"
                     android:scaleType="centerCrop"
                     android:id="@+id/icecream"
                     android:layout_marginLeft="20dp"/>
                 <ImageButton
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
                     android:src="@drawable/dessert_chocolate"
                     android:scaleType="centerCrop"
                     android:id="@+id/chocolate"
-                    android:layout_marginLeft="20dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="30dp">
-                <ImageButton
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
-                    android:src="@drawable/dessert_strawberry"
-                    android:scaleType="centerCrop"
-                    android:id="@+id/strawberry"
-                    android:layout_marginLeft="20dp"/>
-                <ImageButton
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
-                    android:src="@drawable/dessert_oreo"
-                    android:scaleType="centerCrop"
-                    android:id="@+id/oreo"
-                    android:layout_marginLeft="20dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="30dp">
-                <ImageButton
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
-                    android:src="@drawable/dessert_chocooreo"
-                    android:scaleType="centerCrop"
-                    android:id="@+id/chocooreo"
-                    android:layout_marginLeft="20dp"/>
-                <ImageButton
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
-                    android:src="@drawable/dessert_strawberryoreo"
-                    android:scaleType="centerCrop"
-                    android:id="@+id/strawberryooreo"
-                    android:layout_marginLeft="20dp"/>
+                    android:layout_marginLeft="25dp"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="30dp"
-                android:layout_marginBottom="80dp">
+                android:layout_marginLeft="30dp">
                 <ImageButton
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/dessert_strawberry"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/strawberry"
+                    android:layout_marginLeft="20dp"/>
+                <ImageButton
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/dessert_oreo"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/oreo"
+                    android:layout_marginLeft="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp">
+                <ImageButton
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/dessert_chocooreo"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/chocooreo"
+                    android:layout_marginLeft="20dp"/>
+                <ImageButton
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
+                    android:src="@drawable/dessert_strawberryoreo"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/strawberryooreo"
+                    android:layout_marginLeft="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="100dp">
+                <ImageButton
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
                     android:src="@drawable/dessert_verystrawberry"
                     android:scaleType="centerCrop"
                     android:id="@+id/verystrawberry"
                     android:layout_marginLeft="20dp"/>
                 <ImageButton
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
+                    android:layout_width="230dp"
+                    android:layout_height="230dp"
                     android:src="@drawable/dessert_hersheypretzel"
                     android:id="@+id/hersheypretzel"
                     android:scaleType="centerCrop"
-                    android:layout_marginLeft="20dp"/>
+                    android:layout_marginLeft="25dp"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

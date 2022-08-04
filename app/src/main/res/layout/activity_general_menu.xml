@@ -10,9 +10,9 @@
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:text="일반 메뉴"
-        android:textSize="35dp"
+        android:textSize="55dp"
         android:textAlignment="center"
         android:textColor="#F8531F"
         android:background="#F3C12D"
@@ -22,7 +22,8 @@
         android:id="@+id/tabs"
         android:layout_below="@id/title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="60dp"
+        app:tabTextAppearance="@style/tab_text"/>
 
     <androidx.viewpager.widget.ViewPager
         android:layout_below="@id/tabs"
@@ -40,9 +41,9 @@
         android:id="@+id/cartButton"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="90dp"
         android:text="장바구니"
-        android:textSize="30dp"
+        android:textSize="60dp"
         android:textColor="#000000"
         android:background="#F3C12D"/>
 </RelativeLayout>
