@@ -21,27 +21,29 @@
 
                 <ImageButton
                     android:id="@+id/frenchfries"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
                     android:src="@drawable/side_frenchfries"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginTop="10dp"
                     android:scaleType="centerCrop"/>
 
                 <ImageButton
                     android:id="@+id/cheesestick"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
                     android:src="@drawable/side_cheesestick"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
                     android:scaleType="centerCrop"/>
 
                 <ImageButton
                     android:id="@+id/hashbrown"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
                     android:src="@drawable/side_hashbrown"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
                     android:scaleType="centerCrop"/>
             </LinearLayout>
             <LinearLayout
@@ -51,27 +53,29 @@
 
                 <ImageButton
                     android:id="@+id/mcnuggets"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
                     android:src="@drawable/side_mcnuggets"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="centerCrop"/>
+
+                <ImageButton
+                    android:id="@+id/mcwings"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/side_mcwings"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
                     android:scaleType="centerCrop"/>
 
                 <ImageButton
-                    android:id="@+id/mcwings"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
-                    android:src="@drawable/side_mcwings"
-                    android:layout_marginTop="10dp"
-                    android:scaleType="centerCrop"/>
-
-                <ImageButton
                     android:id="@+id/shanghaichickensnack"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
                     android:src="@drawable/side_shanghaichickensnack"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
                     android:scaleType="centerCrop"/>
             </LinearLayout>
             <LinearLayout
@@ -81,32 +85,21 @@
 
                 <ImageButton
                     android:id="@+id/chickentomatosnack"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
                     android:src="@drawable/side_chickentomatosnack"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="15dp"
                     android:scaleType="centerCrop"/>
 
                 <ImageButton
                     android:id="@+id/coleslaw"
-                    android:layout_width="130dp"
-                    android:layout_height="130dp"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
                     android:src="@drawable/side_coleslaw"
                     android:layout_marginTop="10dp"
-                    android:scaleType="centerCrop"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <Button
-                    android:id="@+id/cartButton"
                     android:layout_marginLeft="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:text="장바구니"
-                    android:textSize="20dp"
-                    android:background="#F3C12D"/>
+                    android:scaleType="centerCrop"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

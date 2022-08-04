@@ -1,6 +1,5 @@
 package com.example.kiosk;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -14,10 +13,10 @@ import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MenuMuffin#newInstance} factory method to
+ * Use the {@link EasyMenuMuffin#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MenuMuffin extends Fragment implements View.OnClickListener{
+public class EasyMenuMuffin extends Fragment implements View.OnClickListener{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,10 +27,8 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
     private String mParam1;
     private String mParam2;
 
-    private static Context mContext;
-
-    public MenuMuffin(Context context){
-        mContext = context;
+    public EasyMenuMuffin() {
+        // Required empty public constructor
     }
 
     /**
@@ -40,11 +37,11 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment MenuMuffin.
+     * @return A new instance of fragment EasyMenuMuffin.
      */
     // TODO: Rename and change types and number of parameters
-    public static MenuMuffin newInstance(String param1, String param2) {
-        MenuMuffin fragment = new MenuMuffin(mContext);
+    public static EasyMenuMuffin newInstance(String param1, String param2) {
+        EasyMenuMuffin fragment = new EasyMenuMuffin();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,18 +62,19 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_menu_muffin,container,false);
+        View view = inflater.inflate(R.layout.fragment_easy_menu_muffin,container,false);
         ImageButton bt1 = (ImageButton) view.findViewById(R.id.egg);
         ImageButton bt2 = (ImageButton) view.findViewById(R.id.baconegg);
         ImageButton bt3 = (ImageButton) view.findViewById(R.id.chickencheese);
+
 
         bt1.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "에그 맥머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("에그맥머핀");
-                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(3900);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("에그맥머핀");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3900);}
         });
 
         bt2.setOnClickListener(new View.OnClickListener(){
@@ -84,8 +82,8 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "베이컨에그 맥머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("베이컨에그 맥머핀");
-                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(3900);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("베이컨에그 맥머핀");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3900);}
         });
 
         bt3.setOnClickListener(new View.OnClickListener(){
@@ -93,8 +91,8 @@ public class MenuMuffin extends Fragment implements View.OnClickListener{
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "치킨치크 머핀을 장바구니에 담았습니다.", Toast.LENGTH_SHORT).show();
-                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).MenuList.add("치킨치크 머핀");
-                ((GeneralMenuActivity)GeneralMenuActivity.main_mContext).PriceList.add(3900);}
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).MenuList.add("치킨치크 머핀");
+                ((EasyMenuActivity)EasyMenuActivity.main_mContext).PriceList.add(3900);}
         });
         return view;
     }

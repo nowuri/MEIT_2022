@@ -9,14 +9,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-public class CartActivity2 extends AppCompatActivity {
+public class CartActivity3 extends AppCompatActivity {
     Button btn;
     LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cart2);
+        setContentView(R.layout.activity_cart3);
 
         btn = (Button) findViewById(R.id.chargeButton);
         linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
@@ -31,8 +31,8 @@ public class CartActivity2 extends AppCompatActivity {
         ///////// 주문 리스트 출력 /////////
         int i=0;
 
-        for (String s : ((GeneralMenuActivity) GeneralMenuActivity.main_mContext).MenuList) {
-            int tmp = ((GeneralMenuActivity) GeneralMenuActivity.main_mContext).PriceList.get(i);
+        for (String s : ((EasyMenuActivity) EasyMenuActivity.main_mContext).MenuList) {
+            int tmp = ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList.get(i);
             String s_tmp = s + " - " + tmp;
             TextView newText = new TextView(getApplicationContext());
             newText.setWidth(1000);
@@ -45,7 +45,7 @@ public class CartActivity2 extends AppCompatActivity {
         int m_iTotalPrice = 0;          // 총 결제금액
 
         ////총 결제 금액 계산////
-        for (Integer k : ((GeneralMenuActivity) GeneralMenuActivity.main_mContext).PriceList) {
+        for (Integer k : ((EasyMenuActivity) EasyMenuActivity.main_mContext).PriceList) {
             m_iTotalPrice += k;
         }
 
