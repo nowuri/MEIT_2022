@@ -38,6 +38,23 @@
                    android:layout_marginLeft="25dp"/>
            </LinearLayout>
            <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="100dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="(감자튀김)"
+                   android:textSize="30dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="(치즈스틱)"
+                   android:textSize="30dp"
+                   android:layout_marginLeft="125dp"/>
+           </LinearLayout>
+           <LinearLayout
                android:layout_marginTop="20dp"
                android:layout_marginLeft="30dp"
                android:layout_width="match_parent"
@@ -60,6 +77,23 @@
                    android:scaleType="centerCrop"
                    android:layout_marginTop="10dp"
                    android:layout_marginLeft="25dp"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="70dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="(으깬감자튀김)"
+                   android:textSize="30dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="(무뼈 치킨 조각)"
+                   android:textSize="30dp"
+                   android:layout_marginLeft="70dp"/>
            </LinearLayout>
            <LinearLayout
                android:layout_width="match_parent"
@@ -88,9 +122,25 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:orientation="horizontal"
+               android:layout_marginLeft="100dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="(치킨조각)"
+                   android:textSize="30dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="(매콤치킨쌈)"
+                   android:textSize="30dp"
+                   android:layout_marginLeft="110dp"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
                android:layout_marginTop="20dp"
-               android:layout_marginLeft="30dp"
-               android:layout_marginBottom="100dp">
+               android:layout_marginLeft="30dp">
                <ImageButton
                    android:layout_width="230dp"
                    android:layout_height="230dp"
@@ -107,6 +157,24 @@
                     android:scaleType="centerCrop"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="25dp"/>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="70dp"
+               android:layout_marginBottom="100dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="(치킨토마토쌈)"
+                   android:textSize="30dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="(샐러드)"
+                   android:textSize="30dp"
+                   android:layout_marginLeft="110dp"/>
            </LinearLayout>
        </LinearLayout>
    </ScrollView>

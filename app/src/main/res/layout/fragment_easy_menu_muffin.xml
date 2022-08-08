@@ -39,7 +39,23 @@
                     android:layout_marginTop="10dp"
                     android:scaleType="centerCrop" />
             </LinearLayout>
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="70dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(계란 샌드위치)"
+                    android:textSize="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(베이컨계란샌드위치)"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="40dp"/>
+            </LinearLayout>
             <LinearLayout
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
@@ -55,6 +71,18 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="20dp"
                     android:scaleType="centerCrop"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(치킨치즈샌드위치)"
+                    android:textSize="30dp"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
