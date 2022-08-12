@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="주문이 완료되었습니다"
             android:textAlignment="center"
-            android:textSize="35dp" />
+            android:textSize="45dp" />
 
         <TextView
             android:id="@+id/textView5"
@@ -35,6 +35,6 @@
             android:layout_height="wrap_content"
             android:text="3초 뒤 초기화면으로 돌아갑니다"
             android:textAlignment="center"
-            android:textSize="25dp" />
+            android:textSize="35dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
