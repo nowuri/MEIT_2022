@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page1</title>
+    <style type="text/css">
+        #title{text-align: center; font-size: 30pt; margin-left:170px; align-items: center;}
+        .talk{text-align: center; background-color: #FFBF00; border-radius:10px;}
+        #wrap{height:500px; width:500px; margin-left:auto;margin-right:auto; margin-top:50px;}
+        #charactar{margin-top:20px;}
+        #btn{border-color:white; background-color: white; box-shadow: white;}
+		#logo{margin-left: 50px;}
+		#plus{font-size: 15pt;}
+		.words {
+		  max-width: 500px;
+		  margin: 0px auto;
+		  background: white;
+		  border-radius: 5px;
+		  border-color: aquamarine;
+		  padding: 1rem 2rem 1rem 5rem;
+		  background: -webkit-gradient(linear, 0 0, 0 100%, from(#E6E6E6), color-stop(4%, #fff)) 0 4px;
+		  background-size: 100% 3rem;
+		  position: relative;
+		  line-height: 3rem;
+		}
+
+		p {
+		  margin: 0 0 3rem;
+		}
+
+		.words:before {
+		  content: '';
+		  position: absolute;
+		  width: 4px;
+		  top: 0;
+		  left: 30px;
+		  bottom: 0;
+		  border: 1px solid;
+		  border-color: transparent #A4A4A4;
+		}
+		#next{
+			font-size:30pt;
+			background-color: #FFBF00;
+			border-color: #DBA901;
+			margin-left: 350px;
+			margin-top: 30px;
+			width: 300px;
+			
+		}
+    </style>
+</head>
+<body>
+   <script type="text/javascript">
+	   let p = null;
+	   let texts;
+        function mic(){
+		  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+		  let recognition = new SpeechRecognition();
+		  recognition.interimResults = true;
+		  recognition.lang = 'ko-KR';
+
+		  let makeNewTextContent = function() {
+			p = document.createElement('p');
+			document.querySelector('.words').appendChild(p);
+		  };
+
+		  recognition.start();
+		  recognition.onstart = function() {
+			makeNewTextContent();
+		  };
+		  recognition.onend = function() {
+			recognition.start();
+		  };
+
+		  recognition.onresult = function(e) {
+			texts = Array.from(e.results)
+					.map(results => results[0].transcript).join("");
+
+			texts.replace(/느낌표|강조|뿅/gi, '❗️');
+
+			p.textContent = texts;
+		  };
+        }
+	   function check(){
+		   confirm(texts+"가 맞습니까?");
+	   }
+	   
+    </script>
+    	<img id="logo" src="logoimg.jpg" width="79" height="92">
+    	<span id="title">메뉴 검색/추천 페이지</span>
+    <div id= "wrap">
+        <h2 class="talk">음성인식을 위하여 저를 눌러주세요!<br><span id="plus">*Chrome 브라우저를 사용해주세요*</span></h2>
+        <button id="btn" onclick="mic();">
+            <img src="Character.png" height="404px" width="498px">
+        </button>
+    </div>
+    <div class="words" contenteditable>
+  </div>
+  <input id="next" type="button" value="다음" onclick="check();">
+</body>
+</html>
