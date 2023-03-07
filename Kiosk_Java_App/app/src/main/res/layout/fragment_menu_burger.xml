@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MenuBurger">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bigmac"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@drawable/burger_bigmac"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:id="@+id/bulgogi"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@drawable/burger_bulgogi"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:id="@+id/burger"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@drawable/burger_burger"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/crispyoriental"
+                android:layout_marginLeft="15dp"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/burger_crispyoriental"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:id="@+id/doublebulgogi"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@drawable/burger_doublebulgogi"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:id="@+id/goldenpotato"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@drawable/burger_goldenpotato"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/macspicyshanghai"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@drawable/burger_macspicyshanghai"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:id="@+id/quaterpounder"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@drawable/burger_quaterpounder"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:id="@+id/supremeshrimp"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:src="@drawable/burger_supremeshrimp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

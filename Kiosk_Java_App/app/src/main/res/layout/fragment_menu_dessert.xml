@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MenuDessert">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="75dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <LinearLayout
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/icecream"
+                  android:layout_width="240dp"
+                  android:layout_height="240dp"
+                  android:src="@drawable/dessert_icecream"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="15dp"
+                  android:scaleType="centerCrop"/>
+
+              <ImageButton
+                  android:id="@+id/chocolate"
+                  android:layout_width="240dp"
+                  android:layout_height="240dp"
+                  android:src="@drawable/dessert_chocolate"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:scaleType="centerCrop"/>
+
+              <ImageButton
+                  android:id="@+id/strawberry"
+                  android:layout_width="240dp"
+                  android:layout_height="240dp"
+                  android:src="@drawable/dessert_strawberry"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:scaleType="centerCrop"/>
+          </LinearLayout>
+          <LinearLayout
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/oreo"
+                  android:layout_width="240dp"
+                  android:layout_height="240dp"
+                  android:src="@drawable/dessert_oreo"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="15dp"
+                  android:scaleType="centerCrop"/>
+
+              <ImageButton
+                  android:id="@+id/chocooreo"
+                  android:layout_width="240dp"
+                  android:layout_height="240dp"
+                  android:src="@drawable/dessert_chocooreo"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:scaleType="centerCrop"/>
+
+              <ImageButton
+                  android:id="@+id/strawberryooreo"
+                  android:layout_width="240dp"
+                  android:layout_height="240dp"
+                  android:src="@drawable/dessert_strawberryoreo"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:scaleType="centerCrop"/>
+          </LinearLayout>
+          <LinearLayout
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <ImageButton
+                  android:id="@+id/verystrawberry"
+                  android:layout_width="240dp"
+                  android:layout_height="240dp"
+                  android:src="@drawable/dessert_verystrawberry"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="15dp"
+                  android:scaleType="centerCrop"/>
+
+              <ImageButton
+                  android:id="@+id/hersheypretzel"
+                  android:layout_width="240dp"
+                  android:layout_height="240dp"
+                  android:src="@drawable/dessert_hersheypretzel"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:scaleType="centerCrop"/>
+          </LinearLayout>
+      </LinearLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>
